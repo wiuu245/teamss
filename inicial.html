@@ -16,17 +16,21 @@
         </nav>
     </header>
     <main>
-        <section>
-            <img src="frasedemotivaçã.webp" alt="imagemparajogo">
-
-        </section>
-        <section>
-            <img src="frases_motivacionais.png" alt="imagemparajogo">
-        </section>
+        <div class="carousel">
+            <img src="frasedemotivaçã.webp" alt="Image 1" class="slide">
+            <img src="frases_motivacionais.png" alt="Image 2" class="slide">
+            <button onclick="previousSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+        <h1>Jogo de Adivinhação</h1>
+        <p>Adivinhe um número entre 1 e 100:</p>
+        <input type="number" id="palpite">
+        <button onclick="adivinharNumero()">Enviar Palpite</button>
+        <p id="mensagem"></p>
     </main>
     <footer>
         <p class="rodape">&copy; Desenvolvido por JogoG4.</p>
-    </footer>
-    <script src="script.js"></script>   
+    </footer>   
+    <script src="script.js"></script> 
 </body>
 </html>
